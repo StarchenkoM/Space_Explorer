@@ -1,0 +1,7 @@
+5. Add pagination. Try to use on scroll method in ViewModel and load more photo when it's needed
+12. Switch icons to swg or xml where it's possible
+14. Add hide animation to DailyPhoto full screen preview, to back in previous state by click on image
+19. Try to reduce image size for rovers / add this logic to ImageLoader if possible
+22. Rename ugly variables or recourses
+27. Check mapper code duplications
+28. Check colors for day mode

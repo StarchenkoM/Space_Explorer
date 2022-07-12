@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dailyPhotoFragment">
+
+    <fragment
+        android:id="@+id/dailyPhotoFragment"
+        android:name="com.rprd.space_explorer.presentation.fragments.DailyPhotoFragment"
+        android:label="DailyPhotoFragment" />
+
+    <fragment
+        android:id="@+id/favoritePhotosFragment"
+        android:name="com.rprd.space_explorer.presentation.fragments.FavoritePhotosFragment"
+        android:label="FavoritePhotosFragment" />
+
+    <fragment
+        android:id="@+id/curiosityRoverPhotoFragment"
+        android:name="com.rprd.space_explorer.presentation.fragments.CuriosityFragment"
+        android:label="RoverPhotoFragment" />
+
+    <fragment
+        android:id="@+id/opportunityRoverPhotoFragment"
+        android:name="com.rprd.space_explorer.presentation.fragments.OpportunityFragment"
+        android:label="OpportunityRoverPhotoFragment" />
+
+
+    <dialog
+        android:id="@+id/descriptionDialog"
+        android:name="com.rprd.space_explorer.presentation.fragments.DescriptionDialogFragment"
+        android:label="DescriptionDialog">
+        <argument
+            android:name="description"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+
+    <action
+        android:id="@+id/openDescriptionDialog"
+        app:destination="@id/descriptionDialog">
+
+        <argument
+            android:name="description"
+            app:argType="string"
+            app:nullable="true" />
+    </action>
+
+    <action
+        android:id="@+id/openDailyPhotoFragment"
+        app:destination="@id/dailyPhotoFragment" />
+
+</navigation>

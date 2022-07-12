@@ -1,0 +1,73 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "fd51c39dcaa85de5793c83732000aa76",
+    "entities": [
+      {
+        "tableName": "daily_photos",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `pictureDate` TEXT NOT NULL, `explanation` TEXT NOT NULL, `mediaType` TEXT NOT NULL, `dailyPhotoTitle` TEXT NOT NULL, `dailyPhotoUrl` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pictureDate",
+            "columnName": "pictureDate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "explanation",
+            "columnName": "explanation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mediaType",
+            "columnName": "mediaType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dailyPhotoTitle",
+            "columnName": "dailyPhotoTitle",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dailyPhotoUrl",
+            "columnName": "dailyPhotoUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_daily_photos_pictureDate",
+            "unique": true,
+            "columnNames": [
+              "pictureDate"
+            ],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_daily_photos_pictureDate` ON `${TABLE_NAME}` (`pictureDate`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fd51c39dcaa85de5793c83732000aa76')"
+    ]
+  }
+}

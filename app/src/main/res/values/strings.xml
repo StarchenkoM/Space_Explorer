@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Space Explorer</string>
+    <string name="picture_of_the_day">Astronomy Picture of the Day</string>
+    <string name="curiosity_photos">Curiosity photos</string>
+    <string name="opportunity_photos">Opportunity photos</string>
+    <string name="spirit_photos">Spirit photos</string>
+    <string name="space_exploration_free">Space Explorer. Free</string>
+
+    <string name="switch_to_night_mode">Switch to Night Mode</string>
+    <string name="camera_name_hint">Camera name</string>
+    <string name="photo_url_hint">photo url</string>
+    <string name="earth_date_hint">photo date</string>
+    <string name="mars_date_hint">Mars sol</string>
+    <string name="image_loading_error_message">Image can\'t be loaded at this moment</string>
+    <string name="daily_photo_title">Daily photo title</string>
+    <string name="daily_photo_explanation">Daily photo explanation</string>
+    <string name="select_date_title">Please select date</string>
+    <string name="photo_wasnt_updated">Photo favorite status wasn\'t updated, please try later</string>
+    <string name="photo_favorite_status">Photo favorite status was updated</string>
+    <string name="favorite_photos_title">Favorite Photos</string>
+    <string name="video_loading_error_message">Video can\'t be loaded at this moment</string>
+    <string name="lost_image_description_message">Image doesn\'t have description</string>
+
+    <string name="channel_name">Daily photo</string>
+    <string name="channel_description">Daily photo available</string>
+    <string name="notification_title">Daily photo</string>
+    <string name="notification_text">New space image is available in your app</string>
+    <string name="full_size_image">Full size image here</string>
+    <string name="earth_date">Earth date:</string>
+    <string name="mars_sol">Mars sol:</string>
+    <string name="camera">Camera:</string>
+    <string name="shared_image">sharedImage</string>
+    <string name="image_load_error_message">Image can\'t be loaded</string>
+    <string name="share_image_url">Share image url</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <style name="Theme.Pet_project" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="MaterialCalendarTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+
+        <!--Header Title-->
+        <item name="materialCalendarHeaderTitle">@style/HeaderTitle</item>
+
+        <!--Background-->
+        <item name="colorSurface">@color/background</item>
+
+        <!-- Header panel -->
+        <item name="materialCalendarHeaderLayout">@style/HeaderPanel</item>
+
+        <!-- Header selected date -->
+        <item name="materialCalendarHeaderSelection">@style/HeaderSelectedDate</item>
+
+        <!--Switch-to-keyboard input icon-->
+        <item name="materialCalendarHeaderToggleButton">@style/SwitchToKeyboardInputIcon</item>
+
+        <!--Year selection menu-->
+        <item name="materialCalendarYearNavigationButton">@style/YearSelectionMenu</item>
+
+        <!--Month pagination-->
+        <item name="materialCalendarMonthNavigationButton">@style/MonthPagination</item>
+
+        <!--Day of week-->
+        <item name="materialThemeOverlay">@style/DatePickerThemeDarkOverlay</item>
+
+        <!--Past days-->
+        <item name="dayInvalidStyle">@style/Widget.MaterialComponents.MaterialCalendar.Day.Invalid</item>
+
+        <!--Current Date-->
+        <item name="dayTodayStyle">@style/Widget.MaterialComponents.MaterialCalendar.Day.Today</item>
+
+        <!--Day Style-->
+        <item name="dayStyle">@style/Widget.MaterialComponents.MaterialCalendar.Item</item>
+
+        <!-- Day selected -->
+        <item name="daySelectedStyle">@style/Widget.MaterialComponents.MaterialCalendar.Day.Selected</item>
+
+        <!-- Buttons -->
+        <item name="buttonBarPositiveButtonStyle">@style/SpaceAppButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/SpaceAppTransparentButton</item>
+
+    </style>
+
+
+</resources>

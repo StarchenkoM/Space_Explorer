@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Space Explorer</string>
+    <string name="picture_of_the_day">Astronomy Picture of the Day</string>
+    <string name="curiosity_photos">Curiosity photos</string>
+    <string name="opportunity_photos">Opportunity photos</string>
+    <string name="spirit_photos">Spirit photos</string>
+    <string name="space_exploration_free">Space Explorer. Free</string>
+
+    <string name="switch_to_night_mode">Switch to Day Mode</string>
+</resources>

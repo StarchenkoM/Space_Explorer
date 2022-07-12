@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dailyPhotoFragment"
+            android:icon="@drawable/photo_icon_64_px"
+            android:title="@string/picture_of_the_day" />
+
+        <item
+            android:id="@+id/favoritePhotosFragment"
+            android:icon="@drawable/ic_heart"
+            android:title="@string/favorite_photos_title" />
+
+        <item
+            android:id="@+id/curiosityRoverPhotoFragment"
+            android:icon="@drawable/ic_curiosity"
+            android:title="@string/curiosity_photos" />
+
+        <item
+            android:id="@+id/opportunityRoverPhotoFragment"
+            android:icon="@drawable/ic_opportunity"
+            android:title="@string/opportunity_photos" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_day_night_mode"
+            android:icon="@drawable/ic_day_night"
+            android:title="@string/switch_to_night_mode"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_switch"
+            android:icon="@drawable/ic_day_night"
+            android:title="@string/switch_to_night_mode"
+            android:visible="false"
+            app:actionLayout="@layout/action_view_switch" />
+
+    </group>
+
+</menu>
